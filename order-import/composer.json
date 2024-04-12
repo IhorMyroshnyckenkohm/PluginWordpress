@@ -1,0 +1,14 @@
+{
+    "name": "ihor/wordpress",
+    "autoload": {
+        "psr-4": {
+            "Ihor\\Wordpress\\": "classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "b"
+        }
+    ],
+    "require": {}
+}
