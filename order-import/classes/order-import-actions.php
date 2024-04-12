@@ -45,7 +45,7 @@ class Order_Import_Actions
 
         foreach ( $_POST as $key => $value )
         {
-            if ( strlen($value) <= 70 )
+            if ( strlen($value) <= 90 )
             {
                 $result[ $key ] = $value;
             } else {

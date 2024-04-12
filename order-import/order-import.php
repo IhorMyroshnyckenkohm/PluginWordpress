@@ -40,15 +40,14 @@ class Order_Import_Plugin
 
     public function initialize()
     {
-
-        add_menu_page(
-            __( 'Імпорт замовлень' ) ,
-            'Імпорт замовлень' ,
-            'manage_options' ,
-            'order_import' ,
-            array( new  \order_import\classes\Order_Import_View, 'page_view' ) ,
-            'dashicons-download'
-        );
+            add_submenu_page(
+                'options-general.php',
+                'Імпорт замовлень',
+                'Імпорт замовлень',
+                'manage_options',
+                'custom-settings',
+                array( new  \order_import\classes\Order_Import_View, 'page_view' ) ,
+            );
     }
 
 }
